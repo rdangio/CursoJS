@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt arial;  /* formata a fonte para tipo normal, tamanho 20pontos e fonte arial*/
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual seu nome? ') // janela penguntando nome 
+
+        // escreve na tela // <strong> tag negrito // </br> tab quebra de linha // var.length conta o número de letras
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</br>`) 
+
+        // escreve na tela // </br> tab quebra de linha //  var.toUpperCase() transforma tudo em maiusculo
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}</br>`)
+
+        // escreve na tela // var.toLowerCase() transforma tudo em minusculo
+        document.write(`Seu nome em minusculas é ${nome.toLowerCase()}`)
+
+    </script>
+</body>
+</html>

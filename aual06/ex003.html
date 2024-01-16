@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(71, 71, 202);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        // var n1 = window.prompt('Digite um número: ') // string
+        // var n2 = window.prompt('Digite outro número: ') // string        
+        // var n1 = Number.parseInt(window.prompt('Digite um número: ')) // converte para valor numérico inteiro
+        // var n2 = Number.parseInt(window.prompt('Digite outro número: ')) // converte para valor numérico inteiro
+        // var n1 = Number.parseFloat(window.prompt('Digite um número: ')) // converte para valor numérico flutuante
+        // var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) // converte para valor numérico flutuante
+        var n1 = Number(window.prompt('Digite um número: ')) // converte para valor numérico automaticamente para inteiro ou flutuante
+        var n2 = Number(window.prompt('Digite outro número: ')) // converte para valor numérico automaticamente para inteiro ou flutuante        
+        var s = n1 + n2
+        // window.alert('A soma dos valores é ' + s) // Mostra um alerta sendo s uma variável numérica
+        // window.alert('A soma dos valores é ' + s.toString()) // Mostra um alerta sendo s uma variável string
+        // window.alert('A soma dos valores é ' + String(s)) // Mostra um alerta sendo s uma variável string
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
+</body>
+</html>
