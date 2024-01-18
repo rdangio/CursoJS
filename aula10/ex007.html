@@ -26,13 +26,13 @@
 
     <script>
         function somar() {
-            var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.querySelector('input#txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var s = n1 + n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+            var tn1 = window.document.getElementById('txtn1')  // busca o id txtn1 do input e armazena em tn1
+            var tn2 = window.document.querySelector('input#txtn2') // busca o id txtn2 do input e armazena em tn2 Metodo mais novo
+            var res = window.document.getElementById('res') // busca o id res da div e armazena em res
+            var n1 = Number(tn1.value)  // transforma a entrada do input de string para number
+            var n2 = Number(tn2.value)  // transforma a entrada do input de string para number
+            var s = n1 + n2  // armazena o resultado da soma de n1 e n2 na variavel s
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>` // exibe o resultado concatenado na tela
         }
     </script>
 </body>
