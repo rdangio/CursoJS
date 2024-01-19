@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Digite sua nacionalidade: <input type="text" name="naci" id="naci">
+    <input type="button" value="Enviar" onclick="envia()">
+    <div id="mostra">
+
+    </div>
+    <script>
+        function envia() {
+            var entra = window.document.querySelector('input#naci').value
+            var res = window.document.querySelector('div#mostra')
+            if (entra == 'br') {
+                res.innerHTML += 'é brasileiro'
+            } else {
+                res.innerHTML += 'é estrangeiro'
+            }
+        }
+
+    </script>
+</body>
+</html>
